@@ -1,0 +1,7 @@
+On each trial, please indicate which image you have seen before in this experiment.
+
+Press Z for the left image, or press / for the right image.
+
+Please respond as quickly and accurately as you can.
+
+If you are not certain, please make your best guess.
