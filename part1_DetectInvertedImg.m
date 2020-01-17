@@ -1,9 +1,9 @@
 function [] = part1_DetectInvertedImg()    
 
 %******************************************************************************************
-% Overview of the experiment (part1) procedure (Task: Press key when detecting an rotated image).
+% Overview of the experiment (part1) procedure (Task: Press space when detecting an rotated image).
 % 1. Get subject number in the command window (please put any number you like and then press Enter)
-% 2. Show the instruction to inform task.% 
+% 2. Show the instruction to inform task.
 % 3. Show natual scene images (1sec/img). Participants should press spacebar when an image rotated on its side.
 % 4. Show inter-trial-interval between images (500ms).
 % 5. Provide break time to avoid fatigue (1 time in this version)
@@ -60,7 +60,7 @@ function [] = part1_DetectInvertedImg()
         img_siza = 480;       
         img_dur = 1;
         iti_dur = 0.5;       
-        rot = [90, -90]; % img rotation option       
+        rot = [90, -90]; % image rotation option       
         %======Experiment matrix======%
         % In experiment matrix, all of experimental information will be recorded.
         emat = zeros(length(t_pos), 7); % column1_targetposition, 2_target_rotation, 3_response, 4_rt, 5_imgOnset, 6_itiOnset, 7_itiOffset 
@@ -83,7 +83,7 @@ function [] = part1_DetectInvertedImg()
         expkey(KbName('space'));    
         %============Trial============%       
         for b = 1:n_block
-            % blank display for 1sec between blocks.
+            % blank display (1sec) between blocks.
             Screen('FillRect', wptr, bg_color, rect);
             Screen('Flip', wptr);
             WaitSecs(1);            
